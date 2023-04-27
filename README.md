@@ -16,7 +16,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -32,11 +31,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [Peter_Kibet_Portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Peter_Kibet_Portfolio]** is a showcase of my skills and projects as a junior web developer. The portfolio includes examples of websites I have built, detailing the technologies and languages I used in each project. It also features my resume, contact information, and links to my GitHub and LinkedIn profiles. Visitors can learn more about my education, experience, and programming abilities, as well as view examples of my work. The portfolio is designed to highlight my creativity, attention to detail, and passion for coding, and serves as a platform to demonstrate my potential to potential employers and clients.
 
@@ -44,7 +41,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+
 
 <details>
   <summary>Client</summary>
@@ -70,11 +67,9 @@
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[My portfolio website has a clean and modern design that showcases my work in an attractive way.]**
 - **[The site's responsive layout ensures that my projects look great on any device.]**
@@ -84,21 +79,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -108,6 +89,7 @@ In order to run this project you need:
 
 -Web browser
 -Code editor
+
 ### Setup
 
 To set up this repository, follow these steps:
@@ -116,6 +98,10 @@ To set up this repository, follow these steps:
 2. Navigate to the folder where you want to clone the repository using the cd command.
 3. Once you are in the desired folder, run the following command: git clone<https://github.com/Peter-Kibet/Peter-K-Portfolio.git>
 4. This will clone the repository to your local machine.
+
+
+After completing these steps, you should have a local copy of the repository in your desired folder that you can work with.
+
 
 After completing these steps, you should have a local copy of the repository in your desired folder that you can work with.
 ### Install
@@ -128,11 +114,9 @@ Install this project with:
 To run the project, execute the following command:
 
 
-
 ### Run tests
 
 To run tests, run the following command:
-
 
 
 ### Deployment
@@ -141,7 +125,6 @@ You can deploy this project using:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
