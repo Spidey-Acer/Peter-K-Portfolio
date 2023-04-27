@@ -13,7 +13,7 @@
 @media only screen and (min-width: 374px) and (max-width: 768px) {
   .nav {
     position: absolute;
-    width: 375px;
+    width: 100%;
     height: 92px;
     left: 0;
     top: 0;
@@ -23,19 +23,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 378px;
+    width: 100%;
     height: 48px;
     top: 44px;
     font-family: 'Poppins', sans-serif;
   }
 
+  nav .statusBar {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    top: 0;
+    align-items: center;
+    object-fit: contain;
+  }
+
+  nav .statusBar img {
+    object-fit: cover;
+    width: 100%;
+  }
+
   nav .menu-button {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   nav .nav-bar .menu-button {
     display: flex;
-    width: 40px;
+    width: 100%;
     height: 40px;
     top: calc(50% - 40px / 2);
     margin-left: 24px;
@@ -46,17 +60,18 @@
 
   .home {
     height: 708px;
-    width: 378px;
+    width: 100%;
     background-image: url(./assets/section-1-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    object-fit: cover;
   }
 
   .home .hello {
     position: absolute;
-    width: 327px;
+    width: 100%;
     height: 211px;
     top: 156px;
     left: 27px;
@@ -76,7 +91,7 @@
 
   .home .home-text {
     position: absolute;
-    width: 327px;
+    width: 100%;
     height: 164px;
     top: 382px;
     left: 27px;
@@ -91,7 +106,7 @@
 
   .home-icons {
     position: absolute;
-    width: 170.17px;
+    width: 100%;
     height: 19.62px;
     left: 105px;
     top: 568.89px;
@@ -99,7 +114,7 @@
 
   .home .home-icons {
     position: absolute;
-    width: 327px;
+    width: 100%;
     height: 48px;
     top: 582px;
     left: 27px;
@@ -119,7 +134,7 @@
 
   .home .action-button {
     position: absolute;
-    width: 327px;
+    width: 100%;
     height: 48px;
     top: 665px;
     left: 27px;
