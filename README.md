@@ -9,6 +9,7 @@
 
 </div>
 
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -117,23 +118,30 @@ To set up this repository, follow these steps:
 3. Once you are in the desired folder, run the following command: git clone<https://github.com/Peter-Kibet/Peter-K-Portfolio.git>
 4. This will clone the repository to your local machine.
 
+
 After completing these steps, you should have a local copy of the repository in your desired folder that you can work with.
 
+
+After completing these steps, you should have a local copy of the repository in your desired folder that you can work with.
 ### Install
 
 Install this project with:
+
 
 ### Usage
 
 To run the project, execute the following command:
 
+
 ### Run tests
 
 To run tests, run the following command:
 
+
 ### Deployment
 
 You can deploy this project using:
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,6 +152,7 @@ You can deploy this project using:
 - GitHub: [@githubhandle](https://github.com/Peter-Kibet)
 - Twitter: [@twitterhandle](https://twitter.com/Peter_Montana_J)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-jk-077148195/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BRtNdLwX9S4KxQRQYgnD7qQ%3D%3D)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
