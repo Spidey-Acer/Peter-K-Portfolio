@@ -108,32 +108,26 @@
     color: #172b4d;
   }
 
-  .home-icons {
-    position: absolute;
-    width: 100%;
-    height: 19.62px;
-    left: 105px;
-    top: 568.89px;
-  }
-
   .home .home-icons {
     position: absolute;
     width: 100%;
-    height: 48px;
+    height: 19.62px;
     top: 582px;
-    left: 27px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: -30px;
+    list-style: none;
   }
 
   .home .home-icon img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     align-items: center;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .home .action-button {
@@ -141,7 +135,8 @@
     width: 100%;
     height: 48px;
     top: 665px;
-    left: 27px;
+    padding-left: 13px;
+    padding-right: 13px;
     display: flex;
   }
 
