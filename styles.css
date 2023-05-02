@@ -289,6 +289,23 @@
     font-size: 17px;
     line-height: 24px;
   }
+  
+  .works-samples p {
+    gap: 8px;
+    background-color: #ebf0ee;
+    padding: 8px 12px;
+    height: 32px;
+    border-radius: 4px;
+    font-family: Inter, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    float: right;
+    margin: 0 40px;
+  }
+  
 
   /* About Me */
 
