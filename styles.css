@@ -451,6 +451,136 @@
     color: #008552;
     color: white;
   }
+
+  /* Contact form */
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 24px;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 5600px;
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position-y: 730px;
+  }
+
+  .contact-form h2 {
+    width: 100%;
+    height: 363px;
+    font-family: Inter, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 24px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    width: 100%;
+    height: 330px;
+    font-family: Inter, 'Times New Roman', Times, serif;
+  }
+
+  .contact-form form input {
+    width: 90vw;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #d0d9d4;
+    padding: 16px;
+  }
+
+  .contact-form form textarea {
+    width: 90vw;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #60c095;
+    padding: 16px;
+  }
+
+  .contact-form form input::placeholder {
+    position: absolute;
+    padding-left: 20px;
+    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .contact-form form textarea::placeholder {
+    position: absolute;
+    padding-left: 20px;
+    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #42526e;
+  }
+
+  .contact-form form button {
+    width: 129px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #36b37f;
+    color: white;
+    font-family: Inter, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .contact-form form button:hover {
+    cursor: pointer;
+    background-color: #008552;
+  }
+
+  .contact-form form button:active {
+    background-color: #008552;
+  }
+
+  .contact-form .my-email {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526e;
+    margin-top: 31px;
+  }
+
+  .contact-form .social-media-icons .home-icons {
+    width: 100%;
+    height: 19.62px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    list-style: none;
+  }
 }
 
 /* Styles for tablets and desktop screens */
