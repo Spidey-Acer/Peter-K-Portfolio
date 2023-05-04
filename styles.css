@@ -452,7 +452,7 @@
     color: white;
   }
 
-  /* Contact form*/
+  /* Contact form */
 
   .contact-form {
     display: flex;
@@ -494,7 +494,7 @@
     font-family: Inter, 'Times New Roman', Times, serif;
   }
 
-.contact-form form input {
+  .contact-form form input {
     width: 90vw;
     height: 48px;
     border-radius: 10px;
@@ -506,32 +506,32 @@
     width: 90vw;
     height: 120px;
     border-radius: 10px;
-    border: 1px solid #60C095;
+    border: 1px solid #60c095;
     padding: 16px;
   }
 
   .contact-form form input::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter';
+    font-family: 'Inter', 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: #6B778C;
+    color: #6b778c;
   }
 
   .contact-form form textarea::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter';
+    font-family: 'Inter' 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #42526e;
   }
 
-    .contact-form form button {
+  .contact-form form button {
     width: 129px;
     height: 48px;
     border-radius: 10px;
@@ -559,13 +559,13 @@
     justify-content: center;
     width: 100%;
     height: 38px;
-    font-family: 'Inter';
+    font-family: 'Inter' 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: #42526E;
+    color: #42526e;
     margin-top: 31px;
   }
 
@@ -581,7 +581,6 @@
     margin-top: 30px;
     list-style: none;
   }
-
 }
 
 /* Styles for tablets and desktop screens */
@@ -589,4 +588,3 @@
 @media (min-width: 768px) {
   /* Desktop styles here */
 }
-
