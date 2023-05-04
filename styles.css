@@ -451,6 +451,31 @@
     color: #008552;
     color: white;
   }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 24px;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 5600px
+  }
+
+  .contact-form h2 {
+    width: 100%;
+    height: 363px;
+    font-family: Inter, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 24px;
+  }
+
 }
 
 /* Styles for tablets and desktop screens */
