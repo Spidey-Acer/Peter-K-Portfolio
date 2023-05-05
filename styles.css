@@ -531,28 +531,44 @@
     color: #42526e;
   }
 
-  .contact-form form button {
-    width: 129px;
-    height: 48px;
-    border-radius: 10px;
-    background-color: #36b37f;
-    color: white;
-    font-family: Inter, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
+  .hoverglow {
+    width: 220px;
+    height: 50px;
     border: none;
-  }
-
-  .contact-form form button:hover {
+    outline: none;
+    color: #fff;
+    background: #36b37e;
     cursor: pointer;
-    background-color: #008552;
-  }
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
 
-  .contact-form form button:active {
-    background-color: #008552;
-  }
+.hoverglow:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.hoverglow:active {
+    color: #000
+}
+
+.hoverglow:active:after {
+    background: transparent;
+}
+
 
   .contact-form .my-email {
     align-items: center;
