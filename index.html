@@ -8,50 +8,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="home-bg">
+      <header>
         <nav>
-            <div class="nav-bar">
-              <div class="logo-placeholder"></div>
-              <div class="menu-button">
-                <img src="./assets/Icon - Menu.png" alt="">
-              </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main-content">
-        <section class="home">
-          <h1 class="hello">
-            Hey there. I’m Alex. <br> <span>I’m a software developer</span>
-          </h1>
-          <div class="home-text">
-            <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what
-              you
-              see and have a project you need coded,
-              don’t hesitate to contact me.</p>
+          <div class="top-nav">
+            <ul class="top-nav-items">
+              <li class="top-nav-item"><a href="#" class="top-nav-link">Portfolio</a></li>
+              <li class="top-nav-item"><a href="#" class="top-nav-link">About</a></li>
+              <li class="top-nav-item"><a href="#" class="top-nav-link">Contact</a></li>
+            </ul>
           </div>
-          <ul class="home-icons">
-            <li class="icons"><a href="">
-              <img src="./assets/twitter.png" alt="">
-            </a></li>
-            <li class="icons"><a href="">
-              <img src="./assets/Linkedin icon.png" alt="">
-            </a></li>
-            <li class="icons"><a href="">
-              <img src="./assets/medium.png" alt="">
-            </a></li>
-            <li class="icons"><a href="">
-              <img src="./assets/github.png" alt="">
-            </a></li>
-            <li class="icons"><a href="">
-              <img src="./assets/angellist.png" alt="">
-            </a></li>
-          </ul>
-          <div class="action-button">
-            <div class="arrow-down">
-              <img src="./assets/ArrowDown.png" alt="">
+          <div class="bottom-nav">
+            <div class="logo-placeholder"></div>
+            <div class="menu-button">
+              <img src="./assets/Icon - Menu.png" alt="">
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main-content">
+        <section class="home">
+          <div class="home-items">
+            <h1 class="hello">
+              Hey there. I’m Alex. <br> <span>I’m a software developer</span>
+            </h1>
+            <div class="home-text">
+              <p>I can help you build a product , feature or website Look through some of my work and experience! If you like
+                what
+                you
+                see and have a project you need coded,
+                don’t hesitate to contact me.</p>
+            </div>
+            <ul class="home-icons">
+              <li class="icons"><a href="">
+                  <img src="./assets/twitter.png" alt="">
+                </a></li>
+              <li class="icons"><a href="">
+                  <img src="./assets/Linkedin icon.png" alt="">
+                </a></li>
+              <li class="icons"><a href="">
+                  <img src="./assets/medium.png" alt="">
+                </a></li>
+              <li class="icons"><a href="">
+                  <img src="./assets/github.png" alt="">
+                </a></li>
+              <li class="icons"><a href="">
+                  <img src="./assets/angellist.png" alt="">
+                </a></li>
+            </ul>
+            <div class="action-button">
+              <div class="arrow-down">
+                <img src="./assets/ArrowDown.png" alt="">
+              </div>
             </div>
           </div>
         </section>
+    </div>
+
 
         <section class="works">
           <h1 class="works-heading">My Recent<br> Works</h1>
@@ -200,21 +213,26 @@
         </section>
 
         <section class="contact-form">
-          <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
           <form action="https://formspree.io/f/mayzverj" method="POST">
-            <div class="form-group">
-              <label for="full-name"></label>
-              <input type="text" id="full-name" name="full-name" maxlength="30" placeholder="Full Name" required>
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <div class="input-entries-mobile">
+              <div class="form-entry">
+                <div class="form-group">
+                  <label for="full-name"></label>
+                  <input type="text" id="full-name" name="full-name" maxlength="30" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email"></label>
+                  <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                  <label for="message"></label>
+                  <textarea id="message" name="message" maxlength="500" placeholder="Hey I'd like to connect to..."
+                    required></textarea>
+                </div>
+                <button type="submit">Get in Touch</button>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="form-group">
-              <label for="message"></label>
-              <textarea id="message" name="message" maxlength="500" placeholder="Hey I'd like to connect to..." required></textarea>
-            </div>
-            <button type="submit" class="hoverglow">Get in Touch</button>
           </form>
           <div class="my-email">
             <p>peter.j.kibet@gmail.com</p>
