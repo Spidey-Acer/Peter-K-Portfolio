@@ -121,7 +121,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: <https://peter-kibet.github.io/Peter-K-Portfolio/>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
