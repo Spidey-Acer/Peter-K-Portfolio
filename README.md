@@ -23,6 +23,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
+  - [Loom Walk through](#loom-walk-through)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -125,6 +126,10 @@ You can deploy this project using: <https://peter-kibet.github.io/Peter-K-Portfo
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Loom Walk through
+
+[![Watch the video](https://www.loom.com/share/441d877fa21742e68c328fbd0681cdb5)
 
 ## 👥 Authors <a name="authors"></a>
 
