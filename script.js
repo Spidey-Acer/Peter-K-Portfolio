@@ -4,12 +4,16 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuItem = document.querySelectorAll(".mobile-menu-item");
 
 function toggleMobileMenu() {
-  mobileMenu.classList.toggle("show");
+  mobileMenu.style.display = "flex";
+}
+
+function closeMobileMenu() {
+  mobileMenu.style.display = "none";
 }
 
 function handleMobileMenuItemClick(event) {
   const target = event.target;
-  const sectionId = target.getAttribute("href");
+  const sectionId = target.getAttribute("href").substring(1);
 
   toggleMobileMenu();
 
@@ -20,7 +24,7 @@ function handleMobileMenuItemClick(event) {
 }
 
 menuButton.addEventListener("click", toggleMobileMenu);
-closeButton.addEventListener("click", toggleMobileMenu);
+closeButton.addEventListener("click", closeMobileMenu);
 
 mobileMenuItem.forEach((item) => {
   item.addEventListener("click", handleMobileMenuItemClick);
