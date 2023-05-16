@@ -82,25 +82,13 @@
     left: 0;
     top: 0;
     background-color: #fff;
-    z-index: 100;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 25px;
-    margin-top: 10px;
     z-index: 101;
     display: none;
   }
-
-  /* .hide {
-    display: none;
-    visibility: none;
-  } */
-
-  /* .show {
-    display: block;
-  } */
 
   .close-button {
     width: 100%;
@@ -112,13 +100,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .close-button img {
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
   }
 
   .close-button :hover {
@@ -134,7 +115,7 @@
   .mobile-menu-link {
     text-decoration: none;
     font-style: normal;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 32px;
     color: #3a4a42;
@@ -1223,7 +1204,8 @@
     top: 1100px;
     width: 100%;
     height: 750px;
-    background-image: url(./assets/contact-form\ -bg-3.png),
+    background-image:
+      url(./assets/contact-form\ -bg-3.png),
       url(./assets/contact-form\ -bg-2.png),
       url(./assets/contact-form\ -bg-1.png);
     background-repeat: no-repeat;
@@ -1746,7 +1728,8 @@
     height: 1000px;
     max-height: 2000px;
     left: 0;
-    background-image: url(./assets/about-me-desktop-bg-2.png),
+    background-image:
+      url(./assets/about-me-desktop-bg-2.png),
       url(./assets/AbouyMeBg\ 2-desk.png);
     background-repeat: no-repeat;
     background-position: 0 310px, top right;
@@ -1908,7 +1891,8 @@
     position: relative;
     width: 100%;
     height: 700px;
-    background-image: url(./assets/contact-form\ -bg-3.png),
+    background-image:
+      url(./assets/contact-form\ -bg-3.png),
       url(./assets/contact-form\ -bg-2.png),
       url(./assets/contact-form\ -bg-1.png);
     background-repeat: no-repeat;
