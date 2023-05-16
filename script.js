@@ -15,7 +15,7 @@ function handleMobileMenuItemClick(event) {
   const { target } = event;
   const sectionId = target.getAttribute('href').substring(1);
 
-  toggleMobileMenu();
+  closeMobileMenu();
 
   document.querySelector(sectionId).scrollIntoView({
     behavior: 'smooth',
