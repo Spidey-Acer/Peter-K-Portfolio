@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* --Reset Styles-- */
 
@@ -24,7 +24,7 @@
   }
 
   .bottom-nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 48px;
     left: 0;
@@ -46,7 +46,7 @@
     top: calc(50% - 40px / 2);
     align-items: center;
     padding: 8px;
-    left: 80%;
+    margin-left: auto;
   }
 
   .home .home-icon img {
@@ -75,6 +75,61 @@
     cursor: pointer;
   }
 
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* background-color: #fff; */
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 25px;
+    margin-top: 10px;
+    z-index: 101;
+  }
+
+  .close-button {
+    width: 100%;
+    height: 48px;
+    top: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-right: 38px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .close-button img {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-button :hover {
+    cursor: pointer;
+  }
+
+  .mobile-menu-item {
+    list-style: none;
+    height: 24px;
+    margin-top: calc(50% - 24px / 2);
+  }
+
+  .mobile-menu-link {
+    text-decoration: none;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+    color: #3a4a42;
+  }
+
   .home {
     height: 708px;
     width: 100%;
@@ -93,7 +148,7 @@
     top: 156px;
     padding-left: 13px;
     padding-right: 13px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -116,7 +171,7 @@
     top: 382px;
     padding-left: 13px;
     padding-right: 13px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 28px;
     align-items: center;
@@ -180,7 +235,7 @@
   .works-heading {
     width: 100%;
     height: 97px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -191,7 +246,7 @@
   }
 
   .works-heading::after {
-    content: '';
+    content: "";
     display: block;
     border-radius: 10px;
     width: 50px;
@@ -240,7 +295,7 @@
     padding: 16px;
     width: 295px;
     height: 57px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -269,7 +324,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -287,7 +342,7 @@
     border-radius: 10px;
     padding: 12px;
     bottom: 8px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -315,7 +370,7 @@
   .aboutme .aboutme-info .aboutme-heading {
     width: 100%;
     height: 48px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -329,7 +384,7 @@
   .aboutme .aboutme-info .aboutme-text {
     width: 100%;
     height: 194px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -359,7 +414,7 @@
     padding: 12px;
     color: white;
     margin-left: 25px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -405,7 +460,7 @@
   .knowledge .knowledge-tile .knowledge-title {
     width: 100%;
     height: 32px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -435,7 +490,7 @@
     max-width: fit-content;
     height: 40px;
     border-radius: 10px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -475,7 +530,7 @@
   .contact-form h2 {
     width: 100%;
     height: 363px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -495,7 +550,7 @@
     gap: 24px;
     width: 100%;
     height: 330px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     margin-bottom: 200px;
   }
 
@@ -526,7 +581,7 @@
   .contact-form form input::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
@@ -537,7 +592,7 @@
   .contact-form form textarea::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-family: "Inter" "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -550,7 +605,7 @@
     border-radius: 10px;
     background-color: #36b37f;
     color: white;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -573,7 +628,7 @@
     justify-content: center;
     width: 100%;
     height: 38px;
-    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-family: "Inter" "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -676,7 +731,7 @@
     width: 100%;
     height: 48px;
     top: 44px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     visibility: hidden;
     margin-top: auto;
     position: absolute;
@@ -739,7 +794,7 @@
     width: 100%;
     height: auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -760,7 +815,7 @@
     max-width: fit-content;
     height: auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 28px;
     align-items: center;
@@ -841,7 +896,7 @@
   .works-heading {
     width: 100%;
     height: 97px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -853,7 +908,7 @@
   }
 
   .works-heading::after {
-    content: '';
+    content: "";
     display: block;
     border-radius: 10px;
     width: 50px;
@@ -869,10 +924,10 @@
     grid-template-rows: auto;
     gap: 24px;
     grid-template-areas:
-      'works-heading works-heading '
-      'work-sample-1 work-sample-2 '
-      'work-sample-3 work-sample-4 '
-      'work-sample-5 work-sample-6 ';
+      "works-heading works-heading "
+      "work-sample-1 work-sample-2 "
+      "work-sample-3 work-sample-4 "
+      "work-sample-5 work-sample-6 ";
     position: relative;
     height: 1500px;
   }
@@ -928,7 +983,7 @@
     padding: 16px;
     width: 295px;
     height: 57px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -958,7 +1013,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -976,7 +1031,7 @@
     border-radius: 10px;
     padding: 12px;
     bottom: 8px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1004,7 +1059,7 @@
   .aboutme .aboutme-info .aboutme-heading {
     width: 100%;
     height: 48px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1018,7 +1073,7 @@
   .aboutme .aboutme-info .aboutme-text {
     width: 100%;
     height: 165px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1050,7 +1105,7 @@
     padding: 12px;
     color: white;
     margin-left: 25px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1097,7 +1152,7 @@
   .knowledge .knowledge-tile .knowledge-title {
     width: 100%;
     height: 32px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1127,7 +1182,7 @@
     max-width: fit-content;
     height: 40px;
     border-radius: 10px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1158,7 +1213,9 @@
     top: 1100px;
     width: 100%;
     height: 750px;
-    background-image: url(./assets/contact-form\ -bg-3.png), url(./assets/contact-form\ -bg-2.png), url(./assets/contact-form\ -bg-1.png);
+    background-image: url(./assets/contact-form\ -bg-3.png),
+      url(./assets/contact-form\ -bg-2.png),
+      url(./assets/contact-form\ -bg-1.png);
     background-repeat: no-repeat;
     background-position: left 380px, 250px 400px, right 190px;
     background-size: 160px 261px, 130px 105px, 210px 450px;
@@ -1171,7 +1228,7 @@
   .contact-form form h2 {
     width: 100%;
     height: 256px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1191,7 +1248,7 @@
     gap: 24px;
     width: 100%;
     height: 330px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
   }
 
   .form-entry {
@@ -1223,7 +1280,7 @@
   .contact-form form input::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
@@ -1234,7 +1291,7 @@
   .contact-form form textarea::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-family: "Inter" "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -1247,7 +1304,7 @@
     border-radius: 10px;
     background-color: #36b37f;
     color: white;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1291,7 +1348,7 @@
   }
 
   .social-media-icons::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1365,7 +1422,7 @@
     width: 100%;
     height: 48px;
     top: 44px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     visibility: hidden;
     margin-top: auto;
     position: absolute;
@@ -1420,7 +1477,7 @@
     width: 100%;
     height: auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1441,7 +1498,7 @@
     max-width: fit-content;
     height: auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 28px;
     align-items: center;
@@ -1522,7 +1579,7 @@
   .works-heading {
     width: 100%;
     height: 97px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1534,7 +1591,7 @@
   }
 
   .works-heading::after {
-    content: '';
+    content: "";
     display: block;
     border-radius: 10px;
     width: 50px;
@@ -1550,9 +1607,9 @@
     grid-template-rows: auto;
     gap: 24px;
     grid-template-areas:
-      'works-heading works-heading works-heading'
-      'work-sample-1 work-sample-2 work-sample-3'
-      'work-sample-4 work-sample-5 work-sample-6';
+      "works-heading works-heading works-heading"
+      "work-sample-1 work-sample-2 work-sample-3"
+      "work-sample-4 work-sample-5 work-sample-6";
     padding-left: 145px;
     padding-right: 145px;
     position: relative;
@@ -1610,7 +1667,7 @@
     padding: 16px;
     width: 295px;
     height: 57px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1639,7 +1696,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1657,7 +1714,7 @@
     border-radius: 10px;
     padding: 12px;
     bottom: 8px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1679,7 +1736,8 @@
     height: 1000px;
     max-height: 2000px;
     left: 0;
-    background-image: url(./assets/about-me-desktop-bg-2.png), url(./assets/AbouyMeBg\ 2-desk.png);
+    background-image: url(./assets/about-me-desktop-bg-2.png),
+      url(./assets/AbouyMeBg\ 2-desk.png);
     background-repeat: no-repeat;
     background-position: 0 310px, top right;
     background-size: 228px 130px, 223px 250px;
@@ -1688,7 +1746,7 @@
   .aboutme .aboutme-info .aboutme-heading {
     width: 100%;
     height: 48px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1702,7 +1760,7 @@
   .aboutme .aboutme-info .aboutme-text {
     width: 100%;
     height: 96px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1732,7 +1790,7 @@
     padding: 12px;
     color: white;
     margin-left: 25px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1779,7 +1837,7 @@
   .knowledge .knowledge-tile .knowledge-title {
     width: 100%;
     height: 32px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1809,7 +1867,7 @@
     max-width: fit-content;
     height: 40px;
     border-radius: 10px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1840,7 +1898,9 @@
     position: relative;
     width: 100%;
     height: 700px;
-    background-image: url(./assets/contact-form\ -bg-3.png), url(./assets/contact-form\ -bg-2.png), url(./assets/contact-form\ -bg-1.png);
+    background-image: url(./assets/contact-form\ -bg-3.png),
+      url(./assets/contact-form\ -bg-2.png),
+      url(./assets/contact-form\ -bg-1.png);
     background-repeat: no-repeat;
     background-position: left 350px, 500px 400px, right 150px;
     background-size: 160px 261px, 130px 105px, 210px 450px;
@@ -1849,7 +1909,7 @@
   .contact-form form h2 {
     width: 100%;
     height: 256px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1869,7 +1929,7 @@
     gap: 24px;
     width: 100%;
     height: 330px;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     margin-bottom: 300px;
   }
 
@@ -1902,7 +1962,7 @@
   .contact-form form input::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
@@ -1913,7 +1973,7 @@
   .contact-form form textarea::placeholder {
     position: absolute;
     padding-left: 20px;
-    font-family: 'Inter' 'Times New Roman', Times, serif;
+    font-family: "Inter" "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -1926,7 +1986,7 @@
     border-radius: 10px;
     background-color: #36b37f;
     color: white;
-    font-family: Inter, 'Times New Roman', Times, serif;
+    font-family: Inter, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1970,7 +2030,7 @@
   }
 
   .social-media-icons::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
