@@ -90,6 +90,7 @@
     padding-left: 25px;
     margin-top: 10px;
     z-index: 101;
+    display: none;
   }
 
   /* .hide {
