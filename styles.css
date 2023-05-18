@@ -519,6 +519,7 @@
   }
 
   .contact-form h2 {
+    position: relative;
     width: 100%;
     height: 363px;
     font-family: Inter, "Times New Roman", Times, serif;
@@ -540,7 +541,7 @@
     padding: 0;
     gap: 24px;
     width: 100%;
-    height: 330px;
+    height: 100%;
     font-family: Inter, "Times New Roman", Times, serif;
     margin-bottom: 200px;
   }
@@ -588,6 +589,16 @@
     font-size: 15px;
     line-height: 24px;
     color: #42526e;
+  }
+
+  .form-error {
+    color: #f00;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
   }
 
   .contact-form form button {
@@ -1552,166 +1563,6 @@
     position: relative;
   }
 
-  /* My Works */
-  .works {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 80px 0;
-    gap: 48px;
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    left: 0;
-    top: 0;
-  }
-
-  .works-heading {
-    width: 100%;
-    height: 97px;
-    font-family: Inter, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    align-items: center;
-    text-align: center;
-    color: #172b4d;
-    grid-area: works-heading;
-  }
-
-  .works-heading::after {
-    content: "";
-    display: block;
-    border-radius: 10px;
-    width: 50px;
-    height: 5px;
-    background: #36b37e;
-    align-items: center;
-    margin: 15px auto;
-  }
-
-  .works-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 24px;
-    grid-template-areas:
-      "works-heading works-heading works-heading"
-      "work-sample-1 work-sample-2 work-sample-3"
-      "work-sample-4 work-sample-5 work-sample-6";
-    padding-left: 145px;
-    padding-right: 145px;
-    position: relative;
-    height: 988px;
-  }
-
-  .works-samples {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 474px;
-    max-height: fit-content;
-    list-style: none;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-    border: 1px solid #d0d9d4;
-  }
-
-  .works-container:nth-child(1) {
-    grid-area: work-sample-1;
-  }
-
-  .works-container:nth-child(2) {
-    grid-area: work-sample-2;
-  }
-
-  .works-container:nth-child(3) {
-    grid-area: work-sample-3;
-  }
-
-  .works-container:nth-child(5) {
-    grid-area: work-sample-5;
-  }
-
-  .works-container:nth-child(6) {
-    grid-area: work-sample-6;
-  }
-
-  .works-samples .screenshot {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .works-samples .screenshot .works-samples-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .works-samples .work-title {
-    padding: 16px;
-    width: 295px;
-    height: 57px;
-    font-family: Inter, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    margin: auto;
-    color: #3a4a42;
-  }
-
-  .works-samples .languages-container {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: 32px;
-    margin-top: 16px;
-  }
-
-  .works-samples .languages-container .languages {
-    gap: 8px;
-    background-color: #ebf0ee;
-    padding: 8px 12px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    font-family: Inter, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-  }
-
-  .works-samples .see-project {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 16px auto;
-    background-color: #36b37f;
-    color: white;
-    border-radius: 10px;
-    padding: 12px;
-    bottom: 8px;
-    font-family: Inter, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-  }
 
   /* About Me */
 
@@ -2033,4 +1884,138 @@
     background-color: #dfe1e6;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   }
+}
+
+/* Works */
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lime;
+  height: 350px;
+  width: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.works-samples-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  height: 988px;
+  width: 100%;
+  background-color: #60c095;
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+  /* Add other styling properties as needed */
+}
+
+.close-button {
+  border-radius: 10px;
+  border: 0;
+  height: 28px;
+  width: 28px;
+  font-size: 18px;
+  align-self: flex-end;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.projectImage {
+  position: relative;
+  height: 40vh;
+  width: 95vw;
+  border-radius: 10px;
+  object-fit: cover;
+  right: 0;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style: none;
+}
+
+.technologies-list li {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  width: 80px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add other necessary CSS styles for the popup window */
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-image {
+  width: 200px;
+  height: auto;
+}
+
+.project-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.see-project {
+  margin-top: 10px;
 }
