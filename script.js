@@ -59,3 +59,49 @@ function removeError(input, errorContainer) {
     input.classList.remove("error");
   }
 }
+// Validate the form on submission
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // Use a variable to keep track of whether any input is invalid or empty
+  let hasError = false;
+  // Validate full name
+  if (fullName.value.trim() === '') {
+    showError(fullName, 'Please enter your name', nameErrorContainer);
+    // Set the variable to true if the input is invalid or empty
+    hasError = true;
+  } else {
+    removeError(fullName, nameErrorContainer);
+    fullName.style.borderColor = 'green';
+  }
+  // Validate email address
+  const emailValue = email.value.trim();
+  if (emailValue === '') {
+    showError(email, 'Please enter your email address', emailErrorContainer);
+    // Set the variable to true if the input is invalid or empty
+    hasError = true;
+  } else if (!/\S+@\S+\.\S+/.test(emailValue)) {
+    showError(email, 'Please enter a valid email address', emailErrorContainer);
+    // Set the variable to true if the input is invalid or empty
+    hasError = true;
+  } else if (emailValue.toLowerCase() !== emailValue) {
+    showError(email, 'Email must be in lowercase', emailErrorContainer);
+    // Set the variable to true if the input is invalid or empty
+    hasError = true;
+  } else {
+    removeError(email, emailErrorContainer);
+    email.style.borderColor = 'green';
+  }
+  // Check if the form has any error before submitting it
+  if (hasError) {
+    // Show an error message near the submit button
+    formErrorContainer.innerText = 'Please fix the errors before submitting';
+    form.appendChild(formErrorContainer);
+  } else {
+    // Hide the error message if there is no error
+    if (formErrorContainer.parentNode === form) {
+      form.removeChild(formErrorContainer);
+    }
+    // Submit the form
+    form.submit();
+  }
+});
