@@ -160,3 +160,11 @@ projects.forEach((project) => {
   projectSection.appendChild(projectTile);
 });
 
+function showProjectDetails(project) {
+  const popup = document.createElement("div");
+  popup.className = "popup";
+
+
+function closePopup(popup) {
+  document.body.removeChild(popup);
+}
