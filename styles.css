@@ -1888,28 +1888,119 @@
 
 /* Works */
 
+.works-samples-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  line-height: 1px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.works-samples-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
 .project-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lime;
-  height: 350px;
-  width: auto;
+  height: 480px;
+  width: 370px;
   padding: 10px;
   border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #d0d9d4;
 }
 
-.works-samples-container {
+.project-image {
+  width: 100%;
+  height: 260px;
+}
+
+.project-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 'Inter', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #172b4d;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  position: relative;
-  height: 988px;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+  height: 35px;
   width: 100%;
-  background-color: #60c095;
+}
+
+.tech-item {
+  background-color: #ebf0ee;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #172b4d;
+
+}
+
+.see-project {
+  margin-top: 10px;
+  height: 48px;
+  width: 50%;
+  border-radius: 10px;
+  border: 0;
+  background-color: #36b37f;
+  color: #fff;
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.see-project:hover {
+  cursor: pointer;
+  background-color: #008552;
 }
 
 .popup {
@@ -1927,7 +2018,6 @@
   padding: 20px;
   box-sizing: border-box;
   z-index: 9999;
-  /* Add other styling properties as needed */
 }
 
 .close-button {
@@ -1943,7 +2033,7 @@
 
 .projectImage {
   position: relative;
-  height: 40vh;
+  height: 60vh;
   width: 95vw;
   border-radius: 10px;
   object-fit: cover;
@@ -1976,9 +2066,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: flex-end;
   gap: 10px;
+  background-color: crimson;
+  width: 30%;
+  height: 100%;
 }
 
 .project-links a {
@@ -1986,17 +2078,16 @@
   color: #333;
   font-size: 20px;
   font-weight: bold;
-  width: 80px;
+  width: fit-content;
   height: 50px;
-  background-color: blue;
+  background-color: #36b37e;
   border-radius: 10px;
   font-size: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 12px;
 }
-
-/* Add other necessary CSS styles for the popup window */
 
 .project-content {
   display: flex;
@@ -2004,18 +2095,17 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  height: 82px;
+  width: 100%;
 }
 
-.project-image {
-  width: 200px;
-  height: auto;
-}
-
-.project-title {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.see-project {
-  margin-top: 10px;
+.project-heading {
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 20px;
+  width: 50%;
 }

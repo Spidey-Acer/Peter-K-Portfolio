@@ -45,8 +45,10 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
   {
     featuredImage: "./assets/Snapshoot Portfolio 2.png",
@@ -61,8 +63,10 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
   {
     featuredImage: "./assets/Snapshoot Portfolio 3.png",
@@ -77,8 +81,10 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
   {
     featuredImage: "./assets/Snapshoot Portfolio 4.png",
@@ -93,8 +99,10 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
   {
     featuredImage: "./assets/Snapshoot Portfolio 5.png",
@@ -109,8 +117,10 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
   {
     featuredImage: "./assets/Snapshoot Portfolio 6.png",
@@ -125,13 +135,20 @@ const projects = [
       "Sass",
       "CodePen",
     ],
+    tech: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: "./assets/Snapshoot Portfolio.png",
   },
 ];
 
 const projectSection = document.getElementById("projects");
 projectSection.className = "works-samples-container";
+
+const projectsHeading = document.createElement("h2");
+projectsHeading.className = "works-samples-heading";
+projectsHeading.textContent = "My Recent Works";
+projectSection.appendChild(projectsHeading);
 
 projects.forEach((project) => {
   const projectTile = document.createElement("div");
@@ -147,6 +164,16 @@ projects.forEach((project) => {
   title.className = "project-title";
   title.textContent = project.title;
   projectTile.appendChild(title);
+
+  const technologiesList = document.createElement("ul");
+  technologiesList.className = "tech-list";
+  project.tech.forEach((technology) => {
+    const technologyItem = document.createElement("li");
+    technologyItem.className = "tech-item";
+    technologyItem.textContent = technology;
+    technologiesList.appendChild(technologyItem);
+  });
+  projectTile.appendChild(technologiesList);
 
   const seeProjectButton = document.createElement("button");
   seeProjectButton.className = "see-project btn";
@@ -170,28 +197,48 @@ function showProjectDetails(project) {
     closePopup(popup);
   });
   popup.appendChild(closeButton);
+
   const projectImage = document.createElement("img");
   projectImage.className = "projectImage";
-  projectImage.src = project.featuredImage;
+  projectImage.src = project.project_Image;
   projectImage.alt = project.title;
   popup.appendChild(projectImage);
+
   const projectContent = document.createElement("div");
   projectContent.className = "project-content";
   popup.appendChild(projectContent);
+
   const projectTitle = document.createElement("h2");
+  projectTitle.className = "project-heading";
   projectTitle.textContent = project.title;
   projectContent.appendChild(projectTitle);
+
   const projectLinks = document.createElement("div");
   projectLinks.className = "project-links";
   projectContent.appendChild(projectLinks);
+
   const liveLink = document.createElement("a");
   liveLink.href = project.liveLink;
-  liveLink.textContent = "View Live";
+  liveLink.textContent = "See Live";
   projectLinks.appendChild(liveLink);
+
+  const liveImg = document.createElement("img");
+  liveImg.className = "live-img";
+  liveImg.src = "./assets/SeeLive.png";
+  liveImg.alt = "live";
+  liveLink.appendChild(liveImg);
+
   const githubLink = document.createElement("a");
   githubLink.href = project.githubLink;
-  githubLink.textContent = "View Code";
+  githubLink.textContent = "See Source";
   projectLinks.appendChild(githubLink);
+
+  const githubImg = document.createElement("img");
+  githubImg.className = "github-img";
+  githubImg.src = "./assets/SeeSource-GitHub.png";
+  githubImg.alt = "github";
+  githubLink.appendChild(githubImg);
+
   const technologiesList = document.createElement("ul");
   technologiesList.className = "technologies-list";
   project.technologies.forEach((technology) => {
@@ -200,6 +247,7 @@ function showProjectDetails(project) {
     technologiesList.appendChild(technologyItem);
   });
   popup.appendChild(technologiesList);
+
   const projectDescription = document.createElement("p");
   projectDescription.textContent = project.description;
   popup.appendChild(projectDescription);
