@@ -107,8 +107,10 @@ const projects = [
     ],
     tech: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile (2).png',
   },
   {
     featuredImage: './assets/Snapshoot Portfolio 2.png',
@@ -127,6 +129,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
   {
     featuredImage: './assets/Snapshoot Portfolio 3.png',
@@ -145,6 +149,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
   {
     featuredImage: './assets/Snapshoot Portfolio 4.png',
@@ -163,6 +169,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
   {
     featuredImage: './assets/Snapshoot Portfolio 5.png',
@@ -181,6 +189,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
   {
     featuredImage: './assets/Snapshoot Portfolio 6.png',
@@ -199,6 +209,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     project_Image: './assets/Snapshoot Portfolio.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
 ];
 
@@ -231,7 +243,15 @@ function showProjectDetails(project) {
 
   const projectImage = document.createElement('img');
   projectImage.className = 'projectImage';
-  projectImage.src = project.project_Image;
+
+  // Check if the user is on a mobile device
+  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as per your design
+
+  // Set the image source based on the device type
+  projectImage.src = isMobile
+    ? './assets/SnapshootMobile.png'
+    : './assets/SnapshootDesktop.png';
+
   projectImage.alt = project.title;
   popupWindow.appendChild(projectImage);
 
@@ -270,14 +290,31 @@ function showProjectDetails(project) {
   githubImg.alt = 'github';
   githubLink.appendChild(githubImg);
 
+  // Check if the device has a minimum width of 600px
+  const isDesktop = window.matchMedia('(min-width: 650px)').matches;
+
+  // Create technologies list
   const technologiesList = document.createElement('ul');
-  technologiesList.className = 'technologies-list';
-  project.technologies.forEach((technology) => {
-    const technologyItem = document.createElement('li');
-    technologyItem.textContent = technology;
-    technologiesList.appendChild(technologyItem);
-  });
-  popupWindow.appendChild(technologiesList);
+  const technologyItem = document.createElement('li');
+
+  if (isDesktop) {
+    // Desktop code
+    technologiesList.className = 'technologies-list';
+    project.technologies.forEach((technology) => {
+      technologyItem.textContent = technology;
+      technologiesList.appendChild(technologyItem.cloneNode(true));
+    });
+    popupWindow.appendChild(technologiesList);
+  } else {
+    // Mobile code
+    technologiesList.className = 'tech-list';
+    project.tech.forEach((technology) => {
+      technologyItem.className = 'tech-item';
+      technologyItem.textContent = technology;
+      technologiesList.appendChild(technologyItem.cloneNode(true));
+    });
+    popupWindow.appendChild(technologiesList);
+  }
 
   const projectDescription = document.createElement('p');
   projectDescription.className = 'project-description';
