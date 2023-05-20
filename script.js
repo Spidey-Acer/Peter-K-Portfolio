@@ -244,16 +244,19 @@ function showProjectDetails(project) {
   const projectImage = document.createElement('img');
   projectImage.className = 'projectImage';
 
-  // Check if the user is on a mobile device
-  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as per your design
+  const isMobile = window.innerWidth <= 768;
 
-  // Set the image source based on the device type
   projectImage.src = isMobile
     ? './assets/SnapshootMobile.png'
     : './assets/SnapshootDesktop.png';
 
   projectImage.alt = project.title;
   popupWindow.appendChild(projectImage);
+
+  if (window.innerWidth >= 1308) {
+    projectImage.style.height = '60%';
+    projectImage.style.marginTop = '10em';
+  }
 
   const projectContent = document.createElement('div');
   projectContent.className = 'project-content';
@@ -290,10 +293,8 @@ function showProjectDetails(project) {
   githubImg.alt = 'github';
   githubLink.appendChild(githubImg);
 
-  // Check if the device has a minimum width of 600px
   const isDesktop = window.matchMedia('(min-width: 650px)').matches;
 
-  // Create technologies list
   const technologiesList = document.createElement('ul');
   const technologyItem = document.createElement('li');
 

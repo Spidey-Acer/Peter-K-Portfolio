@@ -10,7 +10,7 @@
 
 /* Styles for mobile screens */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 765px) {
   nav {
     position: relative;
     width: 100%;
@@ -304,7 +304,6 @@
   }
 
   .see-project {
-    margin-top: 10px;
     height: 48px;
     width: 50%;
     border-radius: 10px;
@@ -316,6 +315,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+    margin-top: 4.5em;
   }
 
   .see-project:hover {
@@ -352,11 +352,12 @@
     z-index: 9999;
     background-color: #fff;
     border-radius: 20px;
+    padding: 0.5em;
   }
 
   .close-popup-button {
-    top: 0;
-    left: 0;
+    top: 6.3%;
+    margin-right: 0.6em;
     padding-top: 13px;
     padding-right: 25px;
     display: flex;
@@ -384,7 +385,7 @@
   .projectImage {
     position: relative;
     display: block;
-    height: 220px;
+    height: 235px;
     width: 98%;
     border-radius: 10px;
     object-fit: cover;
@@ -403,7 +404,6 @@
     margin-top: 20px;
     height: 150px;
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .project-links {
@@ -455,12 +455,9 @@
     line-height: 40px;
     color: #172b4d;
     width: 100%;
-    height: 135px;
+    height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: left;
-    padding: 15px;
   }
 
   .technologies-list {
@@ -839,7 +836,7 @@
   }
 }
 
-@media screen and (min-width: 650px) and (max-width: 2560px) {
+@media screen and (min-width: 764px) and (max-width: 2560px) {
   .home-bg {
     width: 100%;
     height: fit-content;
@@ -1167,7 +1164,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
     top: 0;
     left: 0;
     width: 100%;
@@ -1179,8 +1175,8 @@
   }
 
   .popup-window {
-    height: 85%;
-    width: 75%;
+    height: 90vh;
+    width: 75vw;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1189,21 +1185,24 @@
     z-index: 9999;
     border-radius: 20px;
     background-color: #fff;
+    padding: 1em;
+    overflow: hidden;
   }
 
   .close-popup-button {
     border-radius: 10px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 10%;
+    right: auto;
+    margin-right: 0.8em;
     border: 0;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: #ebecf0;
     display: flex;
     align-self: flex-end;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     font-size: 30px;
     color: #67798e;
     font-family: 'Inter', 'Times New Roman', Times, serif;
@@ -1211,19 +1210,16 @@
     font-weight: 500;
     text-align: center;
     z-index: 999999;
-    margin-top: -58px;
   }
 
   .projectImage {
     position: relative;
-    height: 616px;
-    width: 95%;
+    height: 50%;
+    max-height: 676px;
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
     cursor: pointer;
-    color: #333;
-    align-items: center;
-    margin-top: 1em;
   }
 
   .project-content {
@@ -1265,8 +1261,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 1.5rem;
+    padding-right: 1.5em;
   }
 
   .project-links a:hover {
@@ -1294,8 +1290,6 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
   }
 
   .technologies-list {
@@ -1305,9 +1299,10 @@
     justify-content: flex-start;
     gap: 10px;
     list-style: none;
-    height: 32px;
+    height: fit-content;
     width: 100%;
     padding-left: 15px;
+    flex-wrap: wrap;
   }
 
   .technologies-list li {
@@ -1331,8 +1326,8 @@
     line-height: 30px;
     color: #344563;
     width: 100%;
-    height: 100%;
-    min-height: fit-content;
+    height: 150px;
+    min-height: 150px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1343,6 +1338,7 @@
     text-overflow: ellipsis;
     padding-left: 15px;
     padding-right: 15px;
+    position: block;
   }
 
   /* About Me */
