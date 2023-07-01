@@ -212,6 +212,26 @@ const projects = [
     desktop: './assets/Snapshoot Portfolio1.png',
     mobile: './assets/Snapshoot Portfolio1-mobile.png',
   },
+  {
+    featuredImage: './assets/todolist.png',
+    title: 'To-Do List App',
+    liveLink: 'https://www.google.com',
+    githubLink: 'https://www.github.com',
+    technologies: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Sass',
+      'CodePen',
+    ],
+    tech: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    project_Image: './assets/todolist.png',
+    desktop: './assets/Snapshoot Portfolio1.png',
+    mobile: './assets/Snapshoot Portfolio1-mobile.png',
+  },
 ];
 
 const projectSection = document.getElementById('projects');

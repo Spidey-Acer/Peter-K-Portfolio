@@ -10,7 +10,7 @@
 
 /* Styles for mobile screens */
 
-@media only screen and (max-width: 765px) {
+@media only screen (min-width: 350px) and (max-width: 765px) {
   nav {
     position: relative;
     width: 100%;
@@ -235,7 +235,7 @@
     position: relative;
     height: 100px;
     width: 100%;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -295,7 +295,7 @@
     justify-content: center;
     padding: 8px 12px;
     border-radius: 8px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -310,7 +310,7 @@
     border: 0;
     background-color: #36b37f;
     color: #fff;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -375,7 +375,7 @@
     font-size: 30px;
     color: #67798e;
     background: none;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     text-align: center;
@@ -429,7 +429,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -448,7 +448,7 @@
   }
 
   .project-heading {
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -479,7 +479,7 @@
     color: #344563;
     padding: 8px 12px;
     border-radius: 5px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -491,7 +491,7 @@
   }
 
   .project-description {
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1068,7 +1068,7 @@
     position: relative;
     height: 100px;
     width: 100%;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1096,7 +1096,7 @@
   .project-title {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: 'Inter', 'Times New Roman', times, serif;
+    font-family: "Inter", "Times New Roman", times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1130,7 +1130,7 @@
     justify-content: center;
     padding: 8px 12px;
     border-radius: 8px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1146,7 +1146,7 @@
     border: 0;
     background-color: #36b37f;
     color: #fff;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1205,7 +1205,7 @@
     align-items: center;
     font-size: 30px;
     color: #67798e;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     text-align: center;
@@ -1257,7 +1257,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
@@ -1277,7 +1277,7 @@
   }
 
   .project-heading {
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -1310,7 +1310,7 @@
     color: #344563;
     padding: 8px 12px;
     border-radius: 5px;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1319,7 +1319,7 @@
   }
 
   .project-description {
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: "Inter", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1356,8 +1356,7 @@
     height: 1000px;
     max-height: 2000px;
     left: 0;
-    background-image:
-      url(./assets/about-me-desktop-bg-2.png),
+    background-image: url(./assets/about-me-desktop-bg-2.png),
       url(./assets/AbouyMeBg\ 2-desk.png);
     background-repeat: no-repeat;
     background-position: 0 310px, top right;
@@ -1519,8 +1518,7 @@
     position: relative;
     width: 100%;
     height: 700px;
-    background-image:
-      url(./assets/contact-form\ -bg-3.png),
+    background-image: url(./assets/contact-form\ -bg-3.png),
       url(./assets/contact-form\ -bg-2.png),
       url(./assets/contact-form\ -bg-1.png);
     background-repeat: no-repeat;
